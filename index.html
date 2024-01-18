@@ -17,9 +17,9 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="fas fa-times" onclick="close menu">×</li>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </a></li>
-            </ul>
-                <h4 class="fas fa-times" onclick="open menu">=</h4>
+              <strong><li><h3 class="fas fa-times" onclick="closemenu()">❌</h3></li></strong>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      </a></li>
+            </ul> 
+                <strong><h3 class="fas fa-times" onclick="openmenu()">⭕pen</h3></strong>
         </nav>
         <div class="header-text">
             <p></p>
@@ -214,13 +214,13 @@ function opentab(tabname) {
 </script>
 
 <script>
-    var sidemenu = document.getElementById("sidemenu");
+    var sidemeu = document.getElementById("sidemenu");
 
     function openmenu(){
-        sidemenu.style.right = "0";
+        sidemeu.style.right = "0";
     }
         function closemenu(){
-        sidemenu.style.right = "-200px";
+        sidemeu.style.right = "-200px";
 
     }
 </script>
