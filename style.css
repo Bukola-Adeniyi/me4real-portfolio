@@ -11,42 +11,85 @@ body{
     background: #080808;
     color: #fff;
 }
-#header{
-    width: 100%;
-    min-height: 100vh;
+/* Hero section */
+#header {
     position: relative;
+    min-height: 100vh;
+    width: 100%;
     overflow: hidden;
 }
-.hero-img{
+
+/* Hero image */
+.hero-img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -1; /* behind overlay and text */
 }
-.container{
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3); /* adjust opacity if needed */
+    z-index: 0; /* sits above image, below text */
+}
+
+/* Header text */
+.header-text {
+    position: relative;
+    z-index: 2; /* above overlay */
+    color: white;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+}
+
+/* Navigation */
+nav {
     position: relative;
     z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
+
+#sidemenu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#sidemenu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px){
-    #header{
-        min-height: 100svh;
+    .header-text h1 {
+        font-size: 1.8rem;
+    }
+    .header-text p {
+        font-size: 1rem;
+    }
+    #sidemenu {
+        flex-direction: column;
+        background: rgba(0,0,0,0.6);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        display: none; /* toggle with JS */
     }
 }
-
-.container{
-    padding: 10px 10%;
-}
-
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .logo{
     width: 140px;
 }
