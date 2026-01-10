@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERSONAL PORTFOLIO WEBSITE</title>
+    <title>Bukola Adeniyi | Educator • Music Producer • Content Creator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,37 +13,39 @@
     <div class="overlay"></div> <!-- semi-transparent overlay -->
 
     <div class="container">
-        <nav>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Teaching & Creative Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><h3 class="fas fa-times" onclick="closemenu()">✖</h3></li>
-            </ul> 
-            <h3 class="fas fa-bars" onclick="openmenu()">☰</h3>
-        </nav>
+    <nav>
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Teaching & Creative Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><span class="close-icon" onclick="closemenu()">✖</span></li>
+        </ul> 
+        <span class="menu-icon" onclick="openmenu()">☰</span>
+    </nav>
 
-        <div class="header-text">
-            <h1>Welcome to My Portfolio</h1>
-            <p>I am Bukola Adeniyi - Educator, Music producer and Content Creator</p>
-        </div>
+    <div class="header-text">
+        <h1>Educating Minds • Creating Music • Telling Stories</h1>
+        <p>I am Bukola Adeniyi — Educator, Music Producer, and Content Creator</p>
     </div>
 </div>
+</div>
+
 <!-----------about-------->
 
-<div id="about">
+<section id="about">
     <div class="container">
-        <div class="row">
+        <div class="about-row">
+            <!---column1-->
             <div class="about-col-1">
-                <img src="images/BUKP.jpg" alt="">
+                <img src="images/BUKP.jpg" alt="Bukola Adeniyi">
             </div>
+            <!----column2-->
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p> I am an educator with a strong passion for helping children understand, enjoy, and confidently apply what they learn.
-
-With a background in Mathematics Education and extensive experience teaching music to young learners. <br> I combine structure, creativity, and patience to create engaging learning experiences.
+With a background in Mathematics Education and  extensive experience teaching music to young learners. <br> I combine structure, creativity, and patience to create engaging learning experiences.
 
 I believe that when learners feel supported and confident, meaningful learning happens naturally.</p>
 <br>
@@ -64,7 +66,7 @@ I believe that when learners feel supported and confident, meaningful learning h
                         <li><span>Education & Teaching</span><br>Mathematics (Elementary & Secondary)<br>Preschool Music/Piano <br>Online tutoring & virtual classrooms</li>
                         <li><span>Music Education</span><br>ABRSM Grade 1 to Grade 3<br>Piano instruction for beginners<br>Singing, rhythm & movement<br>Music appreciation for young learners</li>
                         <li><span>Creative & Digital</span><br>Music production, Audio Mixing and Mastering<br>Birhday Shoutout<br>Educational video creation<br>Digital content design</li>
-                        <li><span>Creative & Digital</span><br>Music production, Audio Mixing and Mastering<br>Birhday Shoutout<br>Educational video creation<br>Digital content design</li>
+                        <li><span>Applications & Tools</span><br>Cubase, FL Studio <br>OBS Studio, Capcut <br> Google Workspace, Microsoft OneNote <br>AI Tools and Vscode
                     
                     </ul>
                  </div>
@@ -77,9 +79,9 @@ I believe that when learners feel supported and confident, meaningful learning h
                         <li><span>2023</span><br>Author; Zero to Hero on the piano, Nothing to something in Music</li>
                          <li>Additional performance, composition, and music leadership experience available in my full CV.</li>
                     </ul>
-            </div>
-            <div class="tab-contents" id="education">
-                <ul>
+                  </div>
+                    <div class="tab-contents" id="education">
+                    <ul>
                     <li><span>2023</span><br>M.Ed. Mathematics</li>
                     <li><span>2018</span><br>B.Sc. Mathematics Education</li>
                     <li><span>2015</span><br>Qualified Teacher Status (QTS – UK)</li>
@@ -92,12 +94,12 @@ I believe that when learners feel supported and confident, meaningful learning h
                     <li><span>2015</span><br>Tenors Organism</li>
                      
                 </ul>
-        </div>
-    </div>
+                </div>
+            </div>
 </div>
 <!-----------services-------->
-<div id="services"></div>
-    <div class="container"></div>
+<div id="services">
+<div class="container">
     <h1 class="sub-title">SERVICES PAGE</h1>
     <div class="services-list">
          <div>
@@ -128,14 +130,16 @@ I believe that when learners feel supported and confident, meaningful learning h
             <p>Creating content on social media and also available for collaboration</p>
             <a href="#co-le1">View Creative Work</a>  
          </div>
-    </div> 
+    </div>
+ </div>     
+</div> 
 <!-----------------------portfolio--------------------------->
 <div id="portfolio"></div>    
 <div class="container">
     <h1 class="sub-title">Teaching & Creative Work</h1>
     <div class="work-list">
         <div class="work">
-            <img src="images/Maths.jpg">
+            <img src="images/Maths.jpg" alt="Maths teaching content">
             <div class="layer">
                 <h3>Digital Maths Song</h3>
                 <p>Teaching BODMAS with Music</p>
@@ -143,7 +147,7 @@ I believe that when learners feel supported and confident, meaningful learning h
             </div>
         </div>
         <div class="work">
-            <img src="images/MUSIC.jpg">
+            <img src="images/MUSIC.jpg"alt="Music teaching content">
             <div class="layer">
                 <h3>CONTENT/CONCEPT</h3>
                 <p>How to accompany your Favorite Song on the Keyboard</p>
@@ -152,15 +156,15 @@ I believe that when learners feel supported and confident, meaningful learning h
             </div>
         </div>
         <div class="work">
-            <img src="images/OLUYEMISI.jpg">
+            <img src="images/OLUYEMISI.jpg"alt="Birthday Shoutout">
             <div class="layer">
-                <h3>BIRTHDAY SHARRAUTS</h3>
+                <h3>BIRTHDAY SHOUTOUTS</h3>
                 <p>Unforgettable songs composed for more than 50 clients and still counting</p>
                 <a href="https://youtu.be/kumEkO2Afxw?si=kh4o_iCxfljmexJQ">link</a>
             </div>
         </div>
         <div class="work">
-            <img src="images/DAVID.jpg">
+            <img src="images/DAVID.jpg"alt="Music teaching content">
             <div class="layer">
                 <h3>TEACHING MUSIC</h3>
                 <p>Highly inspiring and motivational in teaching</p>
@@ -186,9 +190,9 @@ I believe that when learners feel supported and confident, meaningful learning h
         <div class="row">
             <div class="contact-left" id="co-le1">
                 
-                <p><a href="adeniyibukola13@gmail.com">adeniyibukola13@gmail.com</a></p>
+                <p><a href="mailto:adeniyibukola13@gmail.com">adeniyibukola13@gmail.com</a></p>
                 <p>07061008785</p>
-                <div class="social-icon"> 
+                <div class="social-icons"> 
                     <a href="https://web.facebook.com/adeniyi.bukola.357" target="_blank">
                     <img src="./images/facebook.png" alt="Facebook">
                     </a>
@@ -219,61 +223,6 @@ I believe that when learners feel supported and confident, meaningful learning h
         <p>copyright© Oluwabukolami4real 2026.</p>
     </div>
 </div>
-
-<script>
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents= document.getElementsByClassName("tab-contents");
-function opentab(tabname) {
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link")
-    document.getElementById(tabname).classList.add("active-tab");
-}
-
-</script>
-
-<script>
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu() {
-        sidemenu.style.right = "0";
-    }
-
-    function closemenu() {
-        sidemenu.style.right = "-200px";
-    }
-</script>
-
-<script>
-const scriptURL = 'https://script.google.com/macros/s/AKfycbz2naf2EeLZ8IFECuWlOJyJAzOHKT0DRxNvYxS7IUOrH3UNYo2uNRBAJkoAwhxAz466/exec'
-const form = document.forms['submit-to-google-sheet']
-const msg = document.getElementById("msg")
-
-form.addEventListener('submit', e => {
-    e.preventDefault()
-
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully ✔"
-            msg.style.color = "#00ff88"
-
-            setTimeout(() => {
-                msg.innerHTML = ""
-            }, 5000)
-
-            form.reset()
-        })
-        .catch(error => {
-            msg.innerHTML = "Something went wrong. Please try again."
-            msg.style.color = "red"
-            console.error('Error!', error.message)
-        })
-})
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
